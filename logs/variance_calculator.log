@@ -69,3 +69,53 @@
 2026-03-19 07:19:18,881 - __main__ - INFO - Computing variance for 3 scores
 2026-03-19 07:19:18,881 - __main__ - INFO - Variance calculation completed: 964.6666666666666
 2026-03-19 07:19:18,882 - __main__ - INFO - Application completed successfully
+2026-03-19 07:31:31,646 - __main__ - INFO - Variance Calculator application started
+2026-03-19 07:31:31,646 - __main__ - INFO - Starting user input collection process
+2026-03-19 07:31:49,317 - __main__ - INFO - Valid scores collected: [99, 85, 79]
+2026-03-19 07:31:49,317 - __main__ - INFO - Computing variance for 3 scores
+2026-03-19 07:31:49,317 - __main__ - INFO - Variance calculation completed: 70.22222222222223
+2026-03-19 07:31:49,318 - __main__ - INFO - Application completed successfully
+2026-03-19 07:32:09,318 - __main__ - INFO - Variance Calculator application started
+2026-03-19 07:32:09,318 - __main__ - INFO - Starting user input collection process
+2026-03-19 07:32:13,618 - __main__ - INFO - Valid scores collected: [99, 83, 23]
+2026-03-19 07:32:13,618 - __main__ - INFO - Computing variance for 3 scores
+2026-03-19 07:32:13,618 - __main__ - INFO - Variance calculation completed: 1070.2222222222224
+2026-03-19 07:32:13,619 - __main__ - INFO - Application completed successfully
+2026-03-19 07:38:46,784 - variance - INFO - Computing variance for 3 scores
+2026-03-19 07:38:46,784 - variance - ERROR - Non-integer score detected: True (type: bool)
+2026-03-19 07:38:46,785 - variance - INFO - Computing variance for 0 scores
+2026-03-19 07:38:46,785 - variance - ERROR - Empty scores list provided
+2026-03-19 07:38:46,786 - variance - INFO - Starting user input collection process
+2026-03-19 07:38:46,786 - variance - WARNING - Too many scores provided: 4 > 3
+2026-03-19 07:38:46,786 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 07:38:46,786 - variance - INFO - Computing variance for 3 scores
+2026-03-19 07:38:46,786 - variance - INFO - Variance calculation completed: 1.5555555555555556
+2026-03-19 07:38:46,786 - variance - INFO - Computing variance for 3 scores
+2026-03-19 07:38:46,787 - variance - INFO - Variance calculation completed: 1.5555555555555556
+2026-03-19 07:38:46,787 - variance - INFO - Starting user input collection process
+2026-03-19 07:38:46,787 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 07:38:46,787 - variance - INFO - Computing variance for 3 scores
+2026-03-19 07:38:46,787 - variance - INFO - Variance calculation completed: 1.5555555555555556
+2026-03-19 07:38:46,788 - variance - INFO - Computing variance for 3 scores
+2026-03-19 07:38:46,788 - variance - INFO - Variance calculation completed: 0.0
+2026-03-19 07:38:46,788 - variance - INFO - Computing variance for 3 scores
+2026-03-19 07:38:46,788 - variance - INFO - Variance calculation completed: 66.66666666666667
+2026-03-19 07:38:46,788 - variance - INFO - Computing variance for 3 scores
+2026-03-19 07:38:46,788 - variance - ERROR - Non-integer score detected: 87.5 (type: float)
+2026-03-19 07:38:46,788 - variance - INFO - Computing variance for 5 scores
+2026-03-19 07:38:46,789 - variance - INFO - Variance calculation completed: 2.96
+2026-03-19 07:38:46,789 - variance - INFO - Computing variance for 10 scores
+2026-03-19 07:38:46,789 - variance - ERROR - Invalid input type: expected list, got str
+2026-03-19 07:38:46,789 - variance - INFO - Computing variance for 1 scores
+2026-03-19 07:38:46,789 - variance - INFO - Variance calculation completed: 0.0
+2026-03-19 07:38:46,790 - variance - INFO - Starting user input collection process
+2026-03-19 07:38:46,790 - variance - WARNING - Invalid input parsing: invalid literal for int() with base 10: 'abc'
+2026-03-19 07:38:46,790 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 07:38:46,791 - variance - INFO - Starting user input collection process
+2026-03-19 07:38:46,791 - variance - WARNING - Out-of-range scores detected: [-5]
+2026-03-19 07:38:46,792 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 07:38:46,793 - variance - INFO - Starting user input collection process
+2026-03-19 07:38:46,793 - variance - WARNING - Too many scores provided: 4 > 3
+2026-03-19 07:38:46,794 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-19 07:38:46,794 - variance - INFO - Starting user input collection process
+2026-03-19 07:38:46,794 - variance - INFO - Valid scores collected: [85, 87, 88]

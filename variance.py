@@ -3,8 +3,8 @@ import os
 from datetime import datetime
 from logging.handlers import RotatingFileHandler
 
-# Create LOGS directory if it doesn't exist
-LOGS_DIR = 'LOGS'
+# Create logs directory if it doesn't exist
+LOGS_DIR = 'logs'
 os.makedirs(LOGS_DIR, exist_ok=True)
 
 # Configure logging with rotating file handler

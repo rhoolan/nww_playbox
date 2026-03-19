@@ -9,6 +9,7 @@ A robust Python application for calculating population variance of test scores w
 - **🔄 Interactive Input**: User-friendly command-line interface with error handling and retries
 - **🧪 Comprehensive Testing**: 14 unit tests covering edge cases, error conditions, and integration scenarios
 - **📈 Audit Trail**: Automatic test result logging with timestamped reports
+- **📝 Production Logging**: Structured logging with file rotation for observability and debugging
 - **🏗️ Modular Architecture**: Clean separation of concerns with reusable functions
 
 ## 🚀 Quick Start
@@ -77,6 +78,41 @@ Generates timestamped reports in `test_results/` directory.
 - ✅ User input validation and retry logic
 - ✅ Integration testing
 
+## 📝 Logging
+
+### Log Configuration
+The application uses Python's built-in logging module with structured output and file rotation:
+- **Log Level**: INFO and above (INFO, WARNING, ERROR, CRITICAL)
+- **File Location**: `logs/variance_calculator.log`
+- **Rotation**: Automatic rotation at 10MB with 5 backup files
+- **Format**: Timestamp, log level, module, function, and message
+
+### Log Levels Used
+- **INFO**: Successful operations and key application events
+- **WARNING**: Non-critical issues that don't stop execution
+- **ERROR**: Errors that prevent normal operation
+- **CRITICAL**: Severe errors requiring immediate attention
+
+### Viewing Logs
+```bash
+# View recent log entries
+tail -f logs/variance_calculator.log
+
+# View all log files (including rotated ones)
+ls -la logs/
+
+# Search for specific log entries
+grep "ERROR" logs/variance_calculator.log
+```
+
+### Log Examples
+```
+2024-01-15 10:30:15,123 - INFO - variance - _find_variance - Starting variance calculation for 3 scores
+2024-01-15 10:30:15,124 - INFO - variance - _find_variance - Variance calculated successfully: 2.0000
+2024-01-15 10:30:16,001 - WARNING - variance - _get_scores_from_user - Invalid input format, retrying...
+2024-01-15 10:30:16,002 - ERROR - variance - find_variance_from_user_input - Failed to get valid scores after retries
+```
+
 ## 📊 Example Calculations
 
 | Scores | Mean | Variance | Interpretation |
@@ -109,6 +145,8 @@ nww_playbox/
 ├── variance.py              # Main application
 ├── test_variance.py         # Unit test suite
 ├── update_test_readme.py    # Test automation script
+├── logs/                    # Application log files
+│   └── variance_calculator.log  # Main log file (rotating)
 ├── test_results/            # Audit trail directory
 │   └── test_results_*.md    # Timestamped test reports
 ├── README.md               # This file
