@@ -55,14 +55,14 @@ class TestVariance(unittest.TestCase):
         expected_variance = 1.5555555555555556  # Correct calculation for [85,87,88]
         self.assertAlmostEqual(result, expected_variance, places=2)
 
-    @patch('builtins.input', side_effect=['85,87,88,89', '85,87,88'])
+    @patch('builtins.input', side_effect=[f'{",".join(map(str, list(range(MAX_SCORE_COUNT + 1))))}', '85,87,88'])
     @patch('builtins.print')
     def test_find_variance_from_user_input_too_many_scores(self, mock_print, mock_input):
         result = find_variance_from_user_input()
         expected = _find_variance([85, 87, 88])
         self.assertAlmostEqual(result, expected, places=2)
         # Check that the error message was printed for too many scores
-        mock_print.assert_any_call("Only 3 scores are allowed.")
+        mock_print.assert_any_call(f"Only {MAX_SCORE_COUNT} scores are allowed.")
 
     @patch('builtins.input', side_effect=['85,87,88'])
     def test_get_scores_from_user_valid(self, mock_input):
@@ -78,7 +78,7 @@ class TestVariance(unittest.TestCase):
         self.assertEqual(result, [85, 87, 88])
         mock_print.assert_called_with("Invalid input — please enter integers only, separated by commas.")
 
-    @patch('builtins.input', side_effect=['85,87,88,89', '85,87,88'])
+    @patch('builtins.input', side_effect=[f'{",".join(map(str, list(range(MAX_SCORE_COUNT + 1))))}', '85,87,88'])
     @patch('builtins.print')
     def test_get_scores_from_user_too_many(self, mock_print, mock_input):
         from variance import _get_scores_from_user

@@ -26,7 +26,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 MAX_SCORE = 100
-MAX_SCORE_COUNT = 3
+MAX_SCORE_COUNT = 10
 
 def _find_variance(scores: list[int]) -> float:
     """
