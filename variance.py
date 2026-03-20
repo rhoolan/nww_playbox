@@ -43,8 +43,7 @@ def _find_variance(scores: list[int]) -> float:
         TypeError: If the input is not a list 
         TypeError: If the list elements are not ints
     """
-    logger.info(f"Computing variance for {len(scores)} scores")
-    logger.debug(f"Input scores: {scores}")
+    logger.info(f"Computing variance for {len(scores)} scores: {scores}")
 
     # Type check input to ensure it is a list
     if not isinstance(scores, list):
@@ -56,11 +55,21 @@ def _find_variance(scores: list[int]) -> float:
         logger.error("Empty scores list provided")
         raise ValueError("scores must not be empty")
 
+    # Check maximum score count
+    if len(scores) > MAX_SCORE_COUNT:
+        logger.error(f"Too many scores: {len(scores)} > {MAX_SCORE_COUNT}")
+        raise ValueError(f"No more than {MAX_SCORE_COUNT} scores are allowed")
+
     total = 0 
     for score in scores: 
         if type(score) is not int:
             logger.error(f"Non-integer score detected: {score} (type: {type(score).__name__})")
             raise TypeError("All scores must be integers (bool is not allowed)")
+
+        if not (0 <= score <= MAX_SCORE):
+            logger.error(f"Score out of range: {score}")
+            raise ValueError(f"All scores must be between 0 and {MAX_SCORE} inclusive")
+
         total += score
 
     n = len(scores)
@@ -102,7 +111,7 @@ def _get_scores_from_user() -> list[int]:
             continue
 
         if len(scores) > MAX_SCORE_COUNT:
-            logger.warning(f"Too many scores provided: {len(scores)} > {MAX_SCORE_COUNT}")
+            logger.warning(f"Too many scores provided: {len(scores)} > {MAX_SCORE_COUNT}, input: {scores}")
             print(f"Only {MAX_SCORE_COUNT} scores are allowed.")
             continue
 

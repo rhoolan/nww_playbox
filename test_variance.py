@@ -44,10 +44,19 @@ class TestVariance(unittest.TestCase):
 
     def test_find_variance_negative_scores(self):
         # Function allows negative, but in context scores are 0-100
-        scores = [-10, 0, 10]
-        result = _find_variance(scores)
-        # Mean = 0, variance = (100 + 0 + 100)/3 ≈ 66.67
-        self.assertAlmostEqual(result, 66.67, places=2)
+        with self.assertRaises(ValueError) as cm:
+            _find_variance([-10, 0, 10])
+        self.assertIn("between 0 and", str(cm.exception))
+
+    def test_find_variance_score_above_max(self):
+        with self.assertRaises(ValueError) as cm:
+            _find_variance([101, 90, 80])
+        self.assertIn("between 0 and", str(cm.exception))
+
+    def test_find_variance_too_many_scores(self):
+        with self.assertRaises(ValueError) as cm:
+            _find_variance(list(range(MAX_SCORE_COUNT + 1)))
+        self.assertIn("No more than", str(cm.exception))
 
     @patch('builtins.input', side_effect=['85,87,88'])
     def test_find_variance_from_user_input_valid(self, mock_input):

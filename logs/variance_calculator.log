@@ -277,3 +277,256 @@
 2026-03-20 04:53:17,035 - variance - INFO - Valid scores collected: [85, 87, 88]
 2026-03-20 04:53:17,036 - variance - INFO - Starting user input collection process
 2026-03-20 04:53:17,036 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-20 10:27:17,206 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:27:17,206 - variance - ERROR - Non-integer score detected: True (type: bool)
+2026-03-20 10:27:17,207 - variance - INFO - Computing variance for 0 scores
+2026-03-20 10:27:17,207 - variance - ERROR - Empty scores list provided
+2026-03-20 10:27:17,209 - variance - INFO - Starting user input collection process
+2026-03-20 10:27:17,209 - variance - WARNING - Too many scores provided: 11 > 10
+2026-03-20 10:27:17,209 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-20 10:27:17,209 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:27:17,209 - variance - INFO - Variance calculation completed: 1.5555555555555556
+2026-03-20 10:27:17,210 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:27:17,210 - variance - INFO - Variance calculation completed: 1.5555555555555556
+2026-03-20 10:27:17,210 - variance - INFO - Starting user input collection process
+2026-03-20 10:27:17,211 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-20 10:27:17,211 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:27:17,211 - variance - INFO - Variance calculation completed: 1.5555555555555556
+2026-03-20 10:27:17,211 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:27:17,211 - variance - INFO - Variance calculation completed: 0.0
+2026-03-20 10:27:17,211 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:27:17,211 - variance - INFO - Variance calculation completed: 66.66666666666667
+2026-03-20 10:27:17,212 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:27:17,212 - variance - ERROR - Non-integer score detected: 87.5 (type: float)
+2026-03-20 10:27:17,212 - variance - INFO - Computing variance for 5 scores
+2026-03-20 10:27:17,212 - variance - INFO - Variance calculation completed: 2.96
+2026-03-20 10:27:17,212 - variance - INFO - Computing variance for 10 scores
+2026-03-20 10:27:17,212 - variance - ERROR - Invalid input type: expected list, got str
+2026-03-20 10:27:17,212 - variance - INFO - Computing variance for 1 scores
+2026-03-20 10:27:17,213 - variance - INFO - Variance calculation completed: 0.0
+2026-03-20 10:27:17,213 - variance - INFO - Starting user input collection process
+2026-03-20 10:27:17,213 - variance - WARNING - Invalid input parsing: invalid literal for int() with base 10: 'abc'
+2026-03-20 10:27:17,216 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-20 10:27:17,217 - variance - INFO - Starting user input collection process
+2026-03-20 10:27:17,217 - variance - WARNING - Out-of-range scores detected: [-5]
+2026-03-20 10:27:17,217 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-20 10:27:17,219 - variance - INFO - Starting user input collection process
+2026-03-20 10:27:17,219 - variance - WARNING - Too many scores provided: 11 > 10
+2026-03-20 10:27:17,220 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-20 10:27:17,220 - variance - INFO - Starting user input collection process
+2026-03-20 10:27:17,220 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-20 10:27:49,950 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.0.2.129:8000
+2026-03-20 10:27:49,950 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-20 10:27:49,950 - werkzeug - INFO -  * Restarting with stat
+2026-03-20 10:27:50,149 - werkzeug - WARNING -  * Debugger is active!
+2026-03-20 10:27:50,198 - werkzeug - INFO -  * Debugger PIN: 564-817-547
+2026-03-20 10:27:51,874 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:27:51,874 - variance - INFO - Variance calculation completed: 1.5555555555555556
+2026-03-20 10:27:51,874 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:27:51] "POST /api/variance HTTP/1.1" 200 -
+2026-03-20 10:29:06,787 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.0.2.129:8000
+2026-03-20 10:29:06,787 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-20 10:29:06,788 - werkzeug - INFO -  * Restarting with stat
+2026-03-20 10:29:06,952 - werkzeug - WARNING -  * Debugger is active!
+2026-03-20 10:29:06,953 - werkzeug - INFO -  * Debugger PIN: 564-817-547
+2026-03-20 10:29:18,284 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:29:18] "GET / HTTP/1.1" 200 -
+2026-03-20 10:29:19,969 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:29:19] "GET /styles.css HTTP/1.1" 200 -
+2026-03-20 10:29:20,884 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:29:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-20 10:29:34,143 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:29:34,143 - variance - INFO - Variance calculation completed: 0.888888888888889
+2026-03-20 10:29:34,144 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:29:34] "POST /api/variance HTTP/1.1" 200 -
+2026-03-20 10:29:52,996 - variance - INFO - Computing variance for 7 scores
+2026-03-20 10:29:52,996 - variance - INFO - Variance calculation completed: 66678100.7755102
+2026-03-20 10:29:52,997 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:29:52] "POST /api/variance HTTP/1.1" 200 -
+2026-03-20 10:30:03,189 - variance - INFO - Computing variance for 1 scores
+2026-03-20 10:30:03,189 - variance - INFO - Variance calculation completed: 0.0
+2026-03-20 10:30:03,189 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:30:03] "POST /api/variance HTTP/1.1" 200 -
+2026-03-20 10:30:35,619 - werkzeug - INFO -  * Detected change in '/workspaces/nww_playbox/variance.py', reloading
+2026-03-20 10:30:35,647 - werkzeug - INFO -  * Restarting with stat
+2026-03-20 10:30:35,929 - werkzeug - WARNING -  * Debugger is active!
+2026-03-20 10:30:35,931 - werkzeug - INFO -  * Debugger PIN: 564-817-547
+2026-03-20 10:30:40,598 - werkzeug - INFO -  * Detected change in '/workspaces/nww_playbox/test_variance.py', reloading
+2026-03-20 10:30:40,626 - werkzeug - INFO -  * Restarting with stat
+2026-03-20 10:30:40,797 - werkzeug - WARNING -  * Debugger is active!
+2026-03-20 10:30:40,797 - werkzeug - INFO -  * Debugger PIN: 564-817-547
+2026-03-20 10:30:53,886 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:30:53,886 - variance - ERROR - Non-integer score detected: True (type: bool)
+2026-03-20 10:30:53,886 - variance - INFO - Computing variance for 0 scores
+2026-03-20 10:30:53,886 - variance - ERROR - Empty scores list provided
+2026-03-20 10:30:53,887 - variance - INFO - Starting user input collection process
+2026-03-20 10:30:53,887 - variance - WARNING - Too many scores provided: 11 > 10
+2026-03-20 10:30:53,887 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-20 10:30:53,887 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:30:53,888 - variance - INFO - Variance calculation completed: 1.5555555555555556
+2026-03-20 10:30:53,888 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:30:53,888 - variance - INFO - Variance calculation completed: 1.5555555555555556
+2026-03-20 10:30:53,888 - variance - INFO - Starting user input collection process
+2026-03-20 10:30:53,888 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-20 10:30:53,888 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:30:53,889 - variance - INFO - Variance calculation completed: 1.5555555555555556
+2026-03-20 10:30:53,889 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:30:53,889 - variance - INFO - Variance calculation completed: 0.0
+2026-03-20 10:30:53,889 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:30:53,889 - variance - ERROR - Score out of range: -10
+2026-03-20 10:30:53,889 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:30:53,889 - variance - ERROR - Non-integer score detected: 87.5 (type: float)
+2026-03-20 10:30:53,890 - variance - INFO - Computing variance for 5 scores
+2026-03-20 10:30:53,890 - variance - INFO - Variance calculation completed: 2.96
+2026-03-20 10:30:53,890 - variance - INFO - Computing variance for 10 scores
+2026-03-20 10:30:53,890 - variance - ERROR - Invalid input type: expected list, got str
+2026-03-20 10:30:53,890 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:30:53,890 - variance - ERROR - Score out of range: 101
+2026-03-20 10:30:53,890 - variance - INFO - Computing variance for 1 scores
+2026-03-20 10:30:53,891 - variance - INFO - Variance calculation completed: 0.0
+2026-03-20 10:30:53,891 - variance - INFO - Starting user input collection process
+2026-03-20 10:30:53,891 - variance - WARNING - Invalid input parsing: invalid literal for int() with base 10: 'abc'
+2026-03-20 10:30:53,892 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-20 10:30:53,892 - variance - INFO - Starting user input collection process
+2026-03-20 10:30:53,892 - variance - WARNING - Out-of-range scores detected: [-5]
+2026-03-20 10:30:53,893 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-20 10:30:53,893 - variance - INFO - Starting user input collection process
+2026-03-20 10:30:53,894 - variance - WARNING - Too many scores provided: 11 > 10
+2026-03-20 10:30:53,894 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-20 10:30:53,894 - variance - INFO - Starting user input collection process
+2026-03-20 10:30:53,894 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-20 10:31:02,301 - werkzeug - INFO -  * Detected change in '/workspaces/nww_playbox/variance.py', reloading
+2026-03-20 10:31:02,325 - werkzeug - INFO -  * Restarting with stat
+2026-03-20 10:31:02,588 - werkzeug - WARNING -  * Debugger is active!
+2026-03-20 10:31:02,589 - werkzeug - INFO -  * Debugger PIN: 564-817-547
+2026-03-20 10:31:08,006 - werkzeug - INFO -  * Detected change in '/workspaces/nww_playbox/test_variance.py', reloading
+2026-03-20 10:31:08,079 - werkzeug - INFO -  * Restarting with stat
+2026-03-20 10:31:08,445 - werkzeug - WARNING -  * Debugger is active!
+2026-03-20 10:31:08,445 - werkzeug - INFO -  * Debugger PIN: 564-817-547
+2026-03-20 10:31:13,044 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:31:13,044 - variance - ERROR - Score out of range: 105
+2026-03-20 10:31:13,045 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:31:13] "[31m[1mPOST /api/variance HTTP/1.1[0m" 400 -
+2026-03-20 10:31:37,460 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.0.2.129:8000
+2026-03-20 10:31:37,460 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-20 10:31:37,460 - werkzeug - INFO -  * Restarting with stat
+2026-03-20 10:31:37,641 - werkzeug - WARNING -  * Debugger is active!
+2026-03-20 10:31:37,641 - werkzeug - INFO -  * Debugger PIN: 564-817-547
+2026-03-20 10:31:44,379 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:31:44] "GET / HTTP/1.1" 200 -
+2026-03-20 10:31:44,855 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:31:44] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2026-03-20 10:31:58,036 - variance - INFO - Computing variance for 17 scores
+2026-03-20 10:31:58,036 - variance - INFO - Variance calculation completed: 0.0
+2026-03-20 10:31:58,036 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:31:58] "POST /api/variance HTTP/1.1" 200 -
+2026-03-20 10:32:12,962 - variance - INFO - Computing variance for 11 scores
+2026-03-20 10:32:12,963 - variance - INFO - Variance calculation completed: 9.173553719008265
+2026-03-20 10:32:12,963 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:32:12] "POST /api/variance HTTP/1.1" 200 -
+2026-03-20 10:34:56,974 - variance - INFO - Computing variance for 11 scores
+2026-03-20 10:34:56,974 - variance - INFO - Variance calculation completed: 9.173553719008265
+2026-03-20 10:34:56,974 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:34:56] "POST /api/variance HTTP/1.1" 200 -
+2026-03-20 10:35:02,211 - variance - INFO - Computing variance for 6 scores
+2026-03-20 10:35:02,211 - variance - INFO - Variance calculation completed: 0.0
+2026-03-20 10:35:02,212 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:35:02] "POST /api/variance HTTP/1.1" 200 -
+2026-03-20 10:35:12,942 - variance - INFO - Computing variance for 11 scores
+2026-03-20 10:35:12,942 - variance - INFO - Variance calculation completed: 7.834710743801653
+2026-03-20 10:35:12,943 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:35:12] "POST /api/variance HTTP/1.1" 200 -
+2026-03-20 10:35:56,176 - werkzeug - INFO -  * Detected change in '/workspaces/nww_playbox/variance.py', reloading
+2026-03-20 10:35:56,203 - werkzeug - INFO -  * Restarting with stat
+2026-03-20 10:35:56,387 - werkzeug - WARNING -  * Debugger is active!
+2026-03-20 10:35:56,388 - werkzeug - INFO -  * Debugger PIN: 564-817-547
+2026-03-20 10:36:00,769 - werkzeug - INFO -  * Detected change in '/workspaces/nww_playbox/test_variance.py', reloading
+2026-03-20 10:36:00,797 - werkzeug - INFO -  * Restarting with stat
+2026-03-20 10:36:00,979 - werkzeug - WARNING -  * Debugger is active!
+2026-03-20 10:36:00,979 - werkzeug - INFO -  * Debugger PIN: 564-817-547
+2026-03-20 10:36:15,164 - werkzeug - INFO -  * Detected change in '/workspaces/nww_playbox/variance.py', reloading
+2026-03-20 10:36:15,217 - werkzeug - INFO -  * Restarting with stat
+2026-03-20 10:36:15,428 - werkzeug - WARNING -  * Debugger is active!
+2026-03-20 10:36:15,429 - werkzeug - INFO -  * Debugger PIN: 564-817-547
+2026-03-20 10:36:22,407 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:36:22,407 - variance - ERROR - Non-integer score detected: True (type: bool)
+2026-03-20 10:36:22,407 - variance - INFO - Computing variance for 0 scores
+2026-03-20 10:36:22,408 - variance - ERROR - Empty scores list provided
+2026-03-20 10:36:22,408 - variance - INFO - Starting user input collection process
+2026-03-20 10:36:22,408 - variance - WARNING - Too many scores provided: 11 > 10
+2026-03-20 10:36:22,409 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-20 10:36:22,409 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:36:22,409 - variance - INFO - Variance calculation completed: 1.5555555555555556
+2026-03-20 10:36:22,409 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:36:22,409 - variance - INFO - Variance calculation completed: 1.5555555555555556
+2026-03-20 10:36:22,410 - variance - INFO - Starting user input collection process
+2026-03-20 10:36:22,410 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-20 10:36:22,410 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:36:22,410 - variance - INFO - Variance calculation completed: 1.5555555555555556
+2026-03-20 10:36:22,410 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:36:22,410 - variance - INFO - Variance calculation completed: 0.0
+2026-03-20 10:36:22,410 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:36:22,411 - variance - ERROR - Score out of range: -10
+2026-03-20 10:36:22,411 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:36:22,411 - variance - ERROR - Non-integer score detected: 87.5 (type: float)
+2026-03-20 10:36:22,411 - variance - INFO - Computing variance for 5 scores
+2026-03-20 10:36:22,411 - variance - INFO - Variance calculation completed: 2.96
+2026-03-20 10:36:22,411 - variance - INFO - Computing variance for 10 scores
+2026-03-20 10:36:22,411 - variance - ERROR - Invalid input type: expected list, got str
+2026-03-20 10:36:22,412 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:36:22,412 - variance - ERROR - Score out of range: 101
+2026-03-20 10:36:22,412 - variance - INFO - Computing variance for 1 scores
+2026-03-20 10:36:22,412 - variance - INFO - Variance calculation completed: 0.0
+2026-03-20 10:36:22,412 - variance - INFO - Computing variance for 11 scores
+2026-03-20 10:36:22,412 - variance - ERROR - Too many scores: 11 > 10
+2026-03-20 10:36:22,413 - variance - INFO - Starting user input collection process
+2026-03-20 10:36:22,413 - variance - WARNING - Invalid input parsing: invalid literal for int() with base 10: 'abc'
+2026-03-20 10:36:22,413 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-20 10:36:22,414 - variance - INFO - Starting user input collection process
+2026-03-20 10:36:22,414 - variance - WARNING - Out-of-range scores detected: [-5]
+2026-03-20 10:36:22,415 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-20 10:36:22,415 - variance - INFO - Starting user input collection process
+2026-03-20 10:36:22,416 - variance - WARNING - Too many scores provided: 11 > 10
+2026-03-20 10:36:22,416 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-20 10:36:22,416 - variance - INFO - Starting user input collection process
+2026-03-20 10:36:22,417 - variance - INFO - Valid scores collected: [85, 87, 88]
+2026-03-20 10:36:32,028 - variance - INFO - Computing variance for 11 scores
+2026-03-20 10:36:32,028 - variance - ERROR - Too many scores: 11 > 10
+2026-03-20 10:36:32,028 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:36:32] "[31m[1mPOST /api/variance HTTP/1.1[0m" 400 -
+2026-03-20 10:37:25,625 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.0.2.129:8000
+2026-03-20 10:37:25,625 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-20 10:37:25,626 - werkzeug - INFO -  * Restarting with stat
+2026-03-20 10:37:25,844 - werkzeug - WARNING -  * Debugger is active!
+2026-03-20 10:37:25,845 - werkzeug - INFO -  * Debugger PIN: 564-817-547
+2026-03-20 10:37:29,754 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:37:29] "GET / HTTP/1.1" 200 -
+2026-03-20 10:37:30,158 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:37:30] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2026-03-20 10:38:56,090 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:38:56] "GET / HTTP/1.1" 200 -
+2026-03-20 10:38:56,566 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:38:56] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2026-03-20 10:39:00,689 - variance - INFO - Computing variance for 3 scores
+2026-03-20 10:39:00,689 - variance - INFO - Variance calculation completed: 0.6666666666666666
+2026-03-20 10:39:00,690 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:39:00] "POST /api/variance HTTP/1.1" 200 -
+2026-03-20 10:39:33,748 - werkzeug - INFO -  * Detected change in '/workspaces/nww_playbox/variance.py', reloading
+2026-03-20 10:39:33,811 - werkzeug - INFO -  * Restarting with stat
+2026-03-20 10:39:34,005 - werkzeug - WARNING -  * Debugger is active!
+2026-03-20 10:39:34,006 - werkzeug - INFO -  * Debugger PIN: 564-817-547
+2026-03-20 10:39:36,421 - werkzeug - INFO -  * Detected change in '/workspaces/nww_playbox/variance.py', reloading
+2026-03-20 10:39:36,510 - werkzeug - INFO -  * Restarting with stat
+2026-03-20 10:39:36,795 - werkzeug - WARNING -  * Debugger is active!
+2026-03-20 10:39:36,796 - werkzeug - INFO -  * Debugger PIN: 564-817-547
+2026-03-20 10:39:38,134 - werkzeug - INFO -  * Detected change in '/workspaces/nww_playbox/variance.py', reloading
+2026-03-20 10:39:38,213 - werkzeug - INFO -  * Restarting with stat
+2026-03-20 10:39:38,567 - werkzeug - WARNING -  * Debugger is active!
+2026-03-20 10:39:38,568 - werkzeug - INFO -  * Debugger PIN: 564-817-547
+2026-03-20 10:39:41,901 - werkzeug - INFO -  * Detected change in '/workspaces/nww_playbox/variance.py', reloading
+2026-03-20 10:39:41,931 - werkzeug - INFO -  * Restarting with stat
+2026-03-20 10:39:42,199 - werkzeug - WARNING -  * Debugger is active!
+2026-03-20 10:39:42,199 - werkzeug - INFO -  * Debugger PIN: 564-817-547
+2026-03-20 10:39:48,884 - variance - INFO - Computing variance for 3 scores: [1, 2, 3]
+2026-03-20 10:39:48,885 - variance - INFO - Variance calculation completed: 0.6666666666666666
+2026-03-20 10:39:48,885 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:39:48] "POST /api/variance HTTP/1.1" 200 -
+2026-03-20 10:39:50,264 - variance - INFO - Computing variance for 3 scores: [1, 2, 3]
+2026-03-20 10:39:50,264 - variance - INFO - Variance calculation completed: 0.6666666666666666
+2026-03-20 10:39:50,264 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:39:50] "POST /api/variance HTTP/1.1" 200 -
+2026-03-20 10:39:53,028 - variance - INFO - Computing variance for 4 scores: [1, 2, 3, 8]
+2026-03-20 10:39:53,028 - variance - INFO - Variance calculation completed: 7.25
+2026-03-20 10:39:53,029 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:39:53] "POST /api/variance HTTP/1.1" 200 -
+2026-03-20 10:41:38,138 - variance - INFO - Computing variance for 4 scores: [1, 2, 3, 8]
+2026-03-20 10:41:38,139 - variance - INFO - Variance calculation completed: 7.25
+2026-03-20 10:41:38,139 - werkzeug - INFO - 127.0.0.1 - - [20/Mar/2026 10:41:38] "POST /api/variance HTTP/1.1" 200 -

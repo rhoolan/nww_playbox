@@ -7,7 +7,7 @@ A robust Python application for calculating population variance of test scores w
 - **🎯 Precise Variance Calculation**: Computes population variance using the formula `σ² = Σ((xᵢ - μ)²) / N`
 - **🛡️ Input Validation**: Ensures scores are integers between 0-100, with configurable limits
 - **🔄 Interactive Input**: User-friendly command-line interface with error handling and retries
-- **🧪 Comprehensive Testing**: 14 unit tests covering edge cases, error conditions, and integration scenarios
+- **🧪 Comprehensive Testing**: 16 unit tests covering edge cases, error conditions, and integration scenarios
 - **📈 Audit Trail**: Automatic test result logging with timestamped reports
 - **📝 Production Logging**: Structured logging with file rotation for observability and debugging
 - **🏗️ Modular Architecture**: Clean separation of concerns with reusable functions
@@ -36,6 +36,24 @@ Enter scores separated by commas (e.g. 90, 85, 88): 85,87,88
 Score variance: 2.0000
 ```
 
+### Web UI (New)
+A modern responsive HTML/CSS frontend is now available and backed by a Flask API.
+
+1. Install dependencies:
+```bash
+python -m pip install -r requirements.txt
+```
+2. Start the server:
+```bash
+python app.py
+```
+3. Open in browser:
+`http://localhost:8000`
+
+API endpoint:
+- `POST /api/variance` with JSON body `{ "scores": [85, 87, 88] }`
+- Returns `{ "variance": number, "input": [...] }`
+
 ## 🏗️ Architecture
 
 ### Core Functions
@@ -56,7 +74,13 @@ Orchestrates the complete user interaction flow.
 
 ### Configuration Constants
 - `MAX_SCORE = 100`: Maximum allowed score
-- `MAX_SCORE_COUNT = 3`: Maximum number of scores per calculation
+- `MAX_SCORE_COUNT = 10`: Maximum number of scores per calculation
+
+### Validation Rules
+- Scores must be integers (`int`) and not boolean
+- Score range: 0 through 100 inclusive
+- Maximum inputs: 10 scores
+- API returns 400 for invalid score count/range/type
 
 ## 🧪 Testing
 
