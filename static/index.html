@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variance Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main class="app">
+        <section class="card">
+            <h1>Variance Calculator</h1>
+            <p>Enter a list of integer scores (0-100) separated by commas.</p>
+
+            <label for="scores">Scores</label>
+            <input id="scores" name="scores" type="text" placeholder="e.g. 85, 87, 88" />
+
+            <button id="calculate">Calculate Variance</button>
+
+            <div id="result" class="result" aria-live="polite"></div>
+            <div id="errors" class="errors" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <script>
+        const calculateBtn = document.getElementById('calculate');
+        const scoresInput = document.getElementById('scores');
+        const resultNode = document.getElementById('result');
+        const errorsNode = document.getElementById('errors');
+
+        function renderError(msg) {
+            errorsNode.textContent = msg;
+            resultNode.textContent = '';
+            errorsNode.classList.add('visible');
+            resultNode.classList.remove('visible');
+        }
+
+        function renderResult(variance) {
+            errorsNode.textContent = '';
+            errorsNode.classList.remove('visible');
+            resultNode.textContent = `Variance: ${variance.toFixed(4)}`;
+            resultNode.classList.add('visible');
+        }
+
+        calculateBtn.addEventListener('click', async () => {
+            const raw = scoresInput.value.trim();
+            if (!raw) {
+                renderError('Please enter one or more scores.');
+                return;
+            }
+
+            const values = raw.split(',').map(v => v.trim()).filter(v => v !== '');
+            if (!values.length) {
+                renderError('Please provide valid score values.');
+                return;
+            }
+
+            const scores = values.map(n => Number(n));
+            if (scores.some(n => Number.isNaN(n) || !Number.isFinite(n) || !Number.isInteger(n))) {
+                renderError('All scores must be integers.');
+                return;
+            }
+
+            if (scores.some(n => n < 0 || n > 100)) {
+                renderError('Scores must be between 0 and 100.');
+                return;
+            }
+
+            if (scores.length > 10) {
+                renderError('Only up to 10 scores are allowed.');
+                return;
+            }
+
+            try {
+                const response = await fetch('/api/variance', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ scores })
+                });
+
+                const json = await response.json();
+                if (!response.ok) {
+                    renderError(json.error || 'Unknown error from server.');
+                    return;
+                }
+
+                renderResult(json.variance);
+            } catch (err) {
+                renderError('Network error: ' + err.message);
+            }
+        });
+    </script>
+</body>
+</html>
